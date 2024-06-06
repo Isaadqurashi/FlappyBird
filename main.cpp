@@ -1,33 +1,6 @@
-#include <SFML/Graphics.hpp>
 #include<iostream>
 
-#define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 1024
-
-int main() {
-	sf::RenderWindow window( sf::VideoMode( SCREEN_WIDTH, SCREEN_HEIGHT),"Flappy Bird");
-
-	while (window.isOpen())
-	{
-		//handle input/event
-		sf::Event event;
-
-		while (window.pollEvent(event))
-		{
-			switch (event.type)
-			{
-			case sf::Event::Closed:
-				window.close();
-				break;
-			}
-		}
-
-		// updated game logic
-		window.clear();
-
-		//draw objects
-
-		window.display();
-	}
+int main()
+{
 	return EXIT_SUCCESS;
 }
