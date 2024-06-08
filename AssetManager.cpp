@@ -26,6 +26,8 @@ namespace Flappy
 			this->_fonts[name] = font;
 		}
 	}
-
+	sf::Font& AssetManager::GetFont(std::string name)
+	{
+	}
 
 }
